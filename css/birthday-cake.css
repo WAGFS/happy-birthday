@@ -224,7 +224,7 @@ body {
 	width: 100px;
 	z-index: 999;
 	background: url(../img/Lucky\ guy.png) no-repeat center center / 100% 100%;
-	animation: Lucky .4s linear 39 both ;
+	animation: Lucky .8s linear 39 both ;
 }
 @keyframes Lucky{
 	0%{
