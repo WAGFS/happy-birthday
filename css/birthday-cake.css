@@ -211,6 +211,41 @@ body {
 	}
 }
 
+/* 二维码 */
+.QR{
+	position:absolute;
+	left:50%;
+	top:66%;
+	/* margin-left: -119px; */
+	transform: translate(-50%,0);
+	opacity: 1;
+	animation: showQrcode 10s;
+	animation-delay: 0s;
+	text-align: center;
+}
+.qrCode{
+	max-width: 130px;
+	max-height: 130px;
+}
+
+@keyframes showQrcode{
+	0% {
+		position:absolute;
+		top:62%;
+		opacity: 0;
+	}
+	70% {
+		position:absolute;
+		top:62%;
+		opacity: 0;
+	}
+	100% {
+		position:absolute;
+		top:66%;
+		opacity: 1;
+	}
+}
+
 .cake-area{
 	width: 100%;
 	display: block;

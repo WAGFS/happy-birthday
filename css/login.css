@@ -64,17 +64,36 @@ body :-ms-input-placeholder {
   text-align: center;
 }
 .container h1 {
+  background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(4, 94, 170)), to(rgb(1, 152, 216)));
+  -webkit-background-clip: text; /*必需加前缀 -webkit- 才支持这个text值 */
+  -webkit-text-fill-color: transparent; /*text-fill-color会覆盖color所定义的字体颜色： */
+  filter: hue-rotate(0deg);
   font-size: 40px;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   -webkit-transition-timing-function: ease-in-put;
           transition-timing-function: ease-in-put;
   font-weight: 200;
+  animation: fontColor 1s  linear  infinite alternate both;
 }
 form {
   padding: 20px 0;
   position: relative;
   z-index: 2;
+  overflow: hidden;
+}
+form .imgView{
+  margin: 0 20px 10px;
+  display: inline-block;
+  max-width: 312px;
+  width: 80vw;
+  height: 60vh;
+  max-height: 416px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+  background: url('../img/blessing.jpg') no-repeat center center / cover;
 }
 form input {
   -webkit-appearance: none;
@@ -123,4 +142,14 @@ form button {
 }
 form button:hover {
   background-color: #f5f7f9;
+}
+
+
+@keyframes fontColor{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
 }
