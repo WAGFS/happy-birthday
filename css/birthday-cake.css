@@ -10,7 +10,10 @@ body {
   background: linear-gradient(to bottom right, #ee9ca7 0%, #ee9ca7 100%);
 }
 
-
+@font-face{
+	font-family: 'lemon';
+	src:url(../fonts/柠檬泡芙.ttf);
+}
 #cake {
   display: block;
   position: relative;
@@ -217,7 +220,7 @@ body {
 	position:absolute;
 	left:50%;
 	top:66%;
-	/* margin-left: -119px; */
+	font-family: 'lemon';
 	transform: translate(-50%,0);
 	opacity: 1;
 	animation: showQrcode 10s;
